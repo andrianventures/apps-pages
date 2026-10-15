@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — O-Ring Size Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Privacy Policy</h1>
+        <p>
+          O-Ring Size Finder · Dmitriy Andrianov
+        </p>
+        <nav>
+          <a href="index.html">Support</a>
+          <a href="oring-privacy.html">Privacy Policy</a>
+          <a href="oring-terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy (conversion apps)</a>
+          <a href="terms.html">Terms (conversion apps)</a>
+        </nav>
+      </header>
+
+      <main>
+        <p class="muted">Last updated: October 14, 2026 · Effective: October 14, 2026</p>
+
+        <p class="muted">
+          This policy covers <strong>O-Ring Size Finder</strong> only. Presser Foot Identifier uses
+          <a href="presserfoot-privacy.html">its own privacy policy</a>. Sunglasses Identifier uses
+          <a href="identifier-privacy.html">its own privacy policy</a>. For
+          <strong>Pesos to Dollars Conversion +</strong> and
+          <strong>Euros to Dollars Conversion +</strong>, see
+          <a href="privacy.html">Privacy (conversion apps)</a>.
+        </p>
+
+        <h2>Introduction</h2>
+        <p>
+          This Privacy Policy explains how <strong>Dmitriy Andrianov</strong> ("we," "us," "our"),
+          based in the <strong>United States</strong>, handles information when you use
+          <strong>O-Ring Size Finder</strong> (the "App").
+          By using the App, you agree to this policy together with our
+          <a href="oring-terms.html">Terms of Use</a>.
+        </p>
+        <p>
+          We design the App to work with minimal personal data. We do not sell your personal
+          information. The App has no user accounts and no server-side database of your activity.
+        </p>
+
+        <h2>Information we process</h2>
+        <p><strong>Local data on your device.</strong> The App stores your last 30 size checks
+        (a thumbnail of the photo you provided plus the size report), onboarding progress, the time of your last free size check,
+        and rating-prompt state using your device's storage. That information stays on the device
+        until you delete the App, clear its data, or tap Clear in History. It is never uploaded to us.</p>
+
+        <p><strong>Photos you submit for sizing.</strong> When you take one photo with the
+        in-app camera or choose one photo from your photo library, the
+        App sends that image to our backend (a Supabase Edge Function that we operate), which forwards
+        it to <strong>Google's Gemini</strong> AI service to estimate the O-ring size. The
+        image is processed to generate a result and is not stored by us beyond what is necessary to
+        return that result to your device; our function keeps no copy and our logs contain no image
+        data. Google's processing of the image is governed by Google's terms and privacy notice
+        (linked below). Only submit photos you are allowed to share.</p>
+
+        <h3>Photos, faces, and biometrics</h3>
+        <p>
+          The App is for sizing an <strong>O-ring</strong> from a photo taken next to a ruler or coin. We do
+          <strong>not</strong> use Face ID, TrueDepth, ARKit face tracking, or any API whose purpose is
+          to capture face geometry or biometric templates, and we do not build facial-recognition
+          profiles. If a face or other personal detail appears incidentally in a photo you submit, it
+          is handled only as described under <strong>Photos you submit for sizing</strong>.
+        </p>
+
+        <p><strong>Purchases.</strong> If you buy a subscription, the payment platform (for example,
+        Apple) processes payment. We use <strong>RevenueCat</strong> to validate entitlements and
+        manage premium access. RevenueCat receives transaction-related identifiers and similar data
+        needed to operate purchases.</p>
+
+        <p><strong>Support email.</strong> If you email us, we receive your address, message
+        content, and metadata your mail system sends.</p>
+
+        <h2>Third-party services</h2>
+        <ul>
+          <li>
+            <strong>Apple Inc.</strong> — App Store, in-app purchases, device permissions.
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>
+          </li>
+          <li>
+            <strong>RevenueCat</strong> — subscription and entitlement management.
+            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy</a>
+          </li>
+          <li>
+            <strong>Google</strong> — the Gemini AI service that reads the O-ring photo and the scale beside it.
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+          </li>
+          <li>
+            <strong>Supabase</strong> — hosts the backend Edge Function that relays requests to Google.
+            <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy</a>
+          </li>
+        </ul>
+        <p class="muted">If we add analytics, advertising, or other tools in a future release, we will update this page and, where required, in-app notices.</p>
+
+        <h2>Diagnostics and log-type data</h2>
+        <p>
+          Our backend logs request metadata only (a random request id, number and size of images,
+          timing, and a coarse outcome such as "success" or "malformed output"). It never logs the
+          images themselves, the full prompt, or the full report. Your device or third-party
+          libraries may generate crash and diagnostic information under the relevant platform or SDK
+          provider's policies.
+        </p>
+
+        <h2>Cookies and similar technologies (web)</h2>
+        <p>
+          If you visit this documentation site, your browser may store cookies or similar data as
+          described by the host (for example, GitHub Pages).
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          We rely on HTTPS transport encryption and on reasonable safeguards through our service
+          providers. API credentials for Google are held only on our backend, never in the App. No
+          electronic storage or transmission is completely secure.
+        </p>
+
+        <h2>Children's privacy</h2>
+        <p>
+          The App is not intended for children under <strong>13</strong> in the United States, and
+          we do not knowingly collect personal information from children under 13.
+        </p>
+
+        <h2>U.S. state privacy rights</h2>
+        <p>
+          Depending on where you live, you may have rights to access, delete, or opt out of certain
+          processing of personal information. Because the App stores your data locally, you can
+          delete it directly in the App. For anything we hold (support email), contact us.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. We will post the new version on this
+          page and revise the "Last updated" date.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          <strong>Dmitriy Andrianov</strong><br />
+          United States<br />
+          <a href="mailto:andrianventures@gmail.com">andrianventures@gmail.com</a>
+        </p>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Dmitriy Andrianov</p>
+      </footer>
+    </div>
+  </body>
+</html>
